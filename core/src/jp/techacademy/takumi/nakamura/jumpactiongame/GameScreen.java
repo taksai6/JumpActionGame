@@ -167,7 +167,7 @@ public class GameScreen extends ScreenAdapter {
         Texture starTexture = new Texture("star.png");
         Texture playerTexture = new Texture("uma.png");
         Texture ufoTexture = new Texture("ufo.png");
-        Texture enemyTexture = new Texture("m.jpg");
+        Texture enemyTexture = new Texture("uma.png");
 
 
 
@@ -190,7 +190,7 @@ public class GameScreen extends ScreenAdapter {
             }
 
             if (mRandom.nextFloat() > 0.6f) {
-                Enemy enemy = new Enemy(enemyTexture, 0, 0, 1500, 1000);
+                Enemy enemy = new Enemy(enemyTexture, 0, 0, 100, 100);
                 enemy.setPosition(step.getX() + mRandom.nextFloat(), step.getY() + Enemy.ENEMY_HEIGHT + mRandom.nextFloat() * 3);
                 mEnemy.add(enemy);
             }
